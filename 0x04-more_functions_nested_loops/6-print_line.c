@@ -1,20 +1,21 @@
 #include "main.h"
 
 /**
- * print_line - draws a straight line in the terminal
- * @n: number of line to be printed
- * Return: nothing
+ * print_line - check for a digit
+ * @n : number of _ to be printed
+ * Return:void
  */
+
 void print_line(int n)
 {
-	int i;
 
-	if (n > 0)
+	int i = 0;
+
+	while (i < n && n > 0)
 	{
-		for (i = n; i >= 1; i--)
-			_putchar('_');
-		_putchar('\n');
+		_putchar('_');
+		i++;
 	}
-	else
-		_putchar('\n');
+	_putchar('\n');
+
 }

@@ -1,13 +1,13 @@
 #include "main.h"
-
 /**
- * mul - multiple to digit
- * @a: the fist digit to be multiple
- * @b: the second digit to be multiple
- * Return: the multiple
+ * mul - returns the product of its parameters
+ * @a: int type number
+ * @b: int type number
+ * Return:0
  */
+
+
 int mul(int a, int b)
 {
-	 a *= b;
-	return (a);
+return (a * b);
 }

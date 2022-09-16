@@ -1,26 +1,42 @@
 #include <stdio.h>
-
 /**
- * main - print number from 1-100, but for multiple of 3 print Fizz for multiple
- *        of 5 print Buzz and for multiple of both 5 and 3  print FizzBuzz
- * Return: 0
+ * main - check the code for Holberton School students.
+ *
+ * Return: void.
  */
+
 int main(void)
 {
-	int i;
 
-	for (i = 1; i <= 100; i++)
+	int i = 1;
+
+	while (i <= 100)
 	{
 		if (i % 3 == 0 && i % 5 == 0)
-			printf("%s", "FizzBuzz");
-		else if (i % 5 == 0)
-			printf("%s", "Buzz");
+		{
+			printf("FizzBuzz");
+		}
 		else if (i % 3 == 0)
-			printf("%s", "Fizz");
+		{
+			printf("Fizz");
+		}
+		else if (i % 5 == 0)
+		{
+			printf("Buzz");
+		}
 		else
+		{
 			printf("%i", i);
+		}
+
 		if (i != 100)
-			printf(" ");
+		{
+			putchar(' ');
+		}
+
+		i++;
 	}
 	putchar('\n');
+	return (0);
+
 }
