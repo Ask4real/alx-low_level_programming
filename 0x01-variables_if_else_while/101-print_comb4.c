@@ -1,37 +1,35 @@
 #include <stdio.h>
 
 /**
- * main - prints all possible combination of two two-digit numbers.
- * numbers range from 0-99.
- * All numbers should be printed with two digits. 1 should be printed as 01.
- * The combination of numbers should be printed in ascending order.
- * 00 01 and 01 00 are consider thesame combination of the numbers 0 and 1.
+ * main - it print all possible different combination of three digits,
+ *   the three digit must be different.
+ * 012, 120, 102, 021, 210 are considered the same combination of the digit 0,1
+ *  ,2.
+  * print only the smallest combination of three digits and in ascending order.
  * Return: 0
  */
 int main(void)
 {
-	int a, b;
+	int a, b, c;
 
-	/* set the range of value for (1st, 2nd, 3rd, 4th)digit */
-	for (a = 0; a < 100; a++)
+
+	for (a = 48; a <= 57; a++)
 	{
-		for (a = 0; a < 100; a++)
+		for (b = 49; b <= 57; b++)
 		{
-			/* check if (a is less than b) digit */
-			/*if YES print the digit*/
-			if (a < b)
+			for (c = 50; c <= 57; c++)
 			{
-				putchar((a / 10) + 48);
-				putchar((a % 10) + 48);
+			    
+				if ((a >= b || b >= c))
+					continue;
+				putchar(a);
+				putchar(b);
+				putchar(c);
+			  
+				if (a == 55)
+					break;
+				putchar(',');
 				putchar(' ');
-				putchar((b / 10) + 48);
-				putchar((b % 10) + 48);
-				/* Don't print ',' & ' ' at the last counts*/
-				if (a != 98 || a != 99)
-				{
-					putchar(',');
-					putchar(' ');
-				}
 			}
 		}
 	}
