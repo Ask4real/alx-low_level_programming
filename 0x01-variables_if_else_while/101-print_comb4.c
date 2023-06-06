@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 /**
  * main - it print all possible different combination of three digits,
  *   the three digit must be different.
@@ -19,13 +18,12 @@ int main(void)
 		{
 			for (c = 50; c <= 57; c++)
 			{
-			    
 				if ((a >= b || b >= c))
-					continue;
+				continue;
 				putchar(a);
 				putchar(b);
 				putchar(c);
-			  
+
 				if (a == 55)
 					break;
 				putchar(',');
