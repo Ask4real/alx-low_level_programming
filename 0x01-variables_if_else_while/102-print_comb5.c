@@ -15,19 +15,19 @@ int main(void)
 	/* set the range of value for (1st, 2nd, 3rd, 4th)digit */
 	for (a = 0; a < 100; a++)
 	{
-		for (a = 0; a < 100; a++)
+		for (b = 0; b < 100; b++)
 		{
-			/* check if (a is less than b) digit */
+			/* check if (i is less than j) digit */
 			/*if YES print the digit*/
 			if (a < b)
 			{
 				putchar((a / 10) + 48);
 				putchar((a % 10) + 48);
 				putchar(' ');
-				putchar((b / 10) + 48);
-				putchar((b % 10) + 48);
+				putchar((a / 10) + 48);
+				putchar((a % 10) + 48);
 				/* Don't print ',' & ' ' at the last counts*/
-				if (a != 98 || a != 99)
+				if (a != 98 || b != 99)
 				{
 					putchar(',');
 					putchar(' ');
