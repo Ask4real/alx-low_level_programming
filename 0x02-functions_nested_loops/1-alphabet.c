@@ -8,13 +8,13 @@
  */
 void print_alphabet(void)
 {
-	char c;
+	char a;
 
-	c = 97;
-	while (c >= 97 && c <= 122)
+	a = 97;
+	while (a >= 97 && a <= 122)
 	{
-		_putchar(c);
-		c++;
+		_putchar(a);
+		a++;
 	}
 	_putchar('\n');
 }
