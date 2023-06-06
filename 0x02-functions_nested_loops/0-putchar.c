@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 /**
  * main - it print "_putcahr" followed by a new line
@@ -6,16 +6,16 @@
  */
 int main(void)
 {
-	int i;
+	int a;
 
-	char c[] = "_putchar";
+	char b[] = "_putchar";
 
-	i = 0;
-	while (c[i] != '\0')
+	a = 0;
+	while (b[a] != '\0')
 	{
-		_putchar(c[i]);
-		i++;
+		_putchar(b[a]);
+		a++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
