@@ -24,8 +24,8 @@ int main(void)
 				putchar((a / 10) + 48);
 				putchar((a % 10) + 48);
 				putchar(' ');
-				putchar((a / 10) + 48);
-				putchar((a % 10) + 48);
+				putchar((b / 10) + 48);
+				putchar((b % 10) + 48);
 				/* Don't print ',' & ' ' at the last counts*/
 				if (a != 98 || b != 99)
 				{
