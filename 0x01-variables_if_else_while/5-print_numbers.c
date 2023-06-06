@@ -9,8 +9,6 @@
 int main(void)
 
 {
-	int a;
-
 	printf("0123456789\n");
 
 	return (0);
