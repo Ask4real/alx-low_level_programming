@@ -14,8 +14,10 @@ int main(void)
 
 	/*condition to print small letter*/
 	for (a = 'a'; a <= 'z'; a++)
-	{	putchar (a);
-		putchar ('\n');
+	{	
+		putchar (a);
 	}
+
+		putchar ('\n');
 		return (0);
 }
