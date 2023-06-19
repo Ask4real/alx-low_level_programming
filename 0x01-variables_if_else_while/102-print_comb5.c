@@ -20,9 +20,9 @@ int main(void)
 			if (a < b)
 			{
 				putchar((a / 10) + '0');
-				putchar((a % 10) +'0');
+				putchar((a % 10) + '0');
 				putchar(' ');
-				putchar((b / 10) +'0');
+				putchar((b / 10) + '0');
 				putchar((b % 10) + '0');
 
 				/*Don't print , and ' ' at the last counts*/
